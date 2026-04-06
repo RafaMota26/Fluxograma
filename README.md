@@ -1,13 +1,12 @@
 graph LR
-    A(Início: Recebimento do Pedido) --> B{Produto em Estoque?}
-    B -->|Sim| C[Separar Picking]
-    B -->|Não| D[Comprar/Produzir]
+    A(Recebimento) --> B{Estoque?}
+    B -->|Sim| C[Picking]
+    B -->|Não| D[Produzir]
     D --> C
     C --> E[Embalagem]
-    E --> F[Planejar Rota]
-    F --> G[Transporte e Entrega]
+    E --> F[Rota]
+    F --> G[Entrega]
     G --> H{Entregue?}
-    H -->|Sim| I(Fim: Confirmação)
+    H -->|Sim| I(Fim)
     H -->|Não| J[Reagendar]
     J --> G
-
