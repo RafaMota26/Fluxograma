@@ -1,5 +1,4 @@
 graph LR
-  
     A(Início: Recebimento do Pedido) --> B{Produto em Estoque?}
     B -->|Sim| C[Separar Picking]
     B -->|Não| D[Comprar/Produzir]
@@ -17,4 +16,3 @@ graph LR
     style I fill:#9f9,stroke:#333,stroke-width:2px
     style B fill:#fff4dd,stroke:#d4a017,stroke-width:2px
     style H fill:#fff4dd,stroke:#d4a017,stroke-width:2px
-
