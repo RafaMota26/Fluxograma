@@ -1,5 +1,5 @@
 
-graph LR
+graph TD
     A(Início: Recebimento do Pedido) --> B{Produto em Estoque?}
     B -->|Sim| C[Separar Picking]
     B -->|Não| D[Comprar/Produzir]
