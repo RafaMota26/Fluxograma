@@ -10,3 +10,4 @@ graph LR
   H -->|Sim| I(Fim: Confirmação)
   H -->|Não| J[Reagendar]
   J --> G
+
