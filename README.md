@@ -1,5 +1,3 @@
-#Fluxograma
-
 graph LR
   A(Início: Recebimento do Pedido) --> B{Produto em Estoque?}
   B -->|Sim| C[Separar Picking]
